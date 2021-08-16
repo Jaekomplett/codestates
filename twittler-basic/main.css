@@ -1,0 +1,76 @@
+* {
+ font-family: 'Press Start 2P', cursive;
+}
+hr {
+  height: 2.5px;
+  background-color: rgb(133, 120, 120);
+  margin-top: 25px; 
+}
+input {
+  margin: 1rem;
+  height: 2.5rem;
+  
+}
+
+#greeting {
+  display: flexbox;
+  font-size: 2em;
+  font-weight: bold;
+  border: 2px solid #ccc;
+  background-color: rgb(172, 158, 158);
+  text-align: center;
+  padding: 1rem;
+  height: 5rem ;
+}
+
+#writing-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(172, 158, 158);
+  text-align: center;
+  border: 2px solid #000;
+  padding: 20px 0 20px 0;
+ 
+}
+
+#timeline-container {
+  background-color: rgb(172, 158, 158);
+  text-align: center;
+  border: 2px solid #000;
+  margin: 2px;
+}
+.username {
+  display: flex;
+  align-items: center;
+  
+
+}
+.date {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.5rem;
+}
+
+
+.new-tweets {
+  display: flex;
+  margin: 15px;
+  padding: 15px;
+  background-color: rgb(172, 158, 158);
+}
+
+.tweet-list {
+  margin: 15px;
+  padding: 20px;
+  height: 6rem ;
+  margin: 15px;
+
+}
+
+.content {
+  display: flex;
+  height: 15px;
+  background-color: rgb(172, 158, 158);
+
+}

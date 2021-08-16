@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>twittler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script src="data.js"></script>
+</head>
+
+<body>
+
+  <!-- 여기에 HTML 구조를 작성하세요. 아래 코드는 예제이며, 얼마든지 바꿀 수 있습니다 -->
+  <div id="greeting">twittler</div>
+  <!-- <div id="test"></div> -->
+  <div id="writing-container">
+    <div id="writing-section">
+      <div class="input">
+        <div>Username</div>
+        <div>
+          <input type="text" placeholder="who are you?" class="id-text">
+        </div>
+        <div>Message</div>
+        <div>
+          <input type="text" placeholder="what happens?" class="message-text">
+        </div>
+      </div>
+      <div class="submit-tweet">
+        <div>
+          <button type="button" class="btn btn-secondary">Tweet!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="timeline-container">
+    <div id="check">
+      <button class="new-tweets">⟳ check new tweets</button>
+    </div>
+    <dl>
+      <dt class="tweet-list">
+        <span class="username">Mario</span>
+        <span class="date">2015-05-18 15:20:20</span>
+        <div class="content">education for real world</div>
+        <hr>
+      </dt>
+      <dt class="tweet-list">
+        <span class="username">Koopa</span>
+        <span class="date">2015-07-03 15:31:36</span>
+        <div class="content">education for real world</div>
+        <hr>
+      </dt>
+      <dt class="tweet-list">
+        <span class="username">Princess Toadstool</span>
+        <span class="date">2019.01.05 07:30:21</span>
+        <div class="content">education for real world</div>
+        <hr>
+      </dt>
+      <dt class="tweet-list">
+        <span class="username">Luigi</span>
+        <span class="date">2019.01.05 07:30:29</span>
+        <div class="content">education for real world</div>
+        <hr>
+      </dt>
+      <dt class="tweet-list">
+        <span class="username"></span>
+        <span class="date">2019.01.05 07:32:35</span>
+        <div class="content">education for real world</div>
+        <hr>
+      </dt>
+    </dl>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
