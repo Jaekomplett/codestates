@@ -1,0 +1,50 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: rgb(224, 224, 224);
+}
+
+#signup-text {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  color:rgb(255, 81, 58);
+}
+
+.signup-form {
+  display: flexbox;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  width: 30em;
+  height: 40em;
+  margin: 6rem auto;
+  padding: 2.5rem;
+  border-radius: 30px;
+}
+input {
+  border-radius: 10px;
+}
+
+
+.submit-btn{
+  display: flex;
+  justify-content: center;
+  width: 20rem;
+  height: 3rem;
+  outline: none;
+  border-radius: 20px;
+  background-color: linear-gradient(to left, rgb(255, 77, 46), rgb(255, 155, 47));
+  color: white;
+
+}
+
+.hide {
+  display: none;
+}
+
+/* 레트로 TV 화면 안에 구현 */
+/* 배경화면은 노이즈 채널*/
