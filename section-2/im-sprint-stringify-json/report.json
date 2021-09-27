@@ -1,0 +1,312 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 21,
+    "passes": 21,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-09-27T04:48:22.790Z",
+    "end": "2021-09-27T04:48:22.799Z",
+    "duration": 9
+  },
+  "tests": [
+    {
+      "title": "객체는 문자열 \"9\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"9\"로 변환되어야 합니다",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"null\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"null\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"true\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"true\"로 변환되어야 합니다",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"false\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"false\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"\"Hello world\"\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"\"Hello world\"\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"[]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"[8]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[8]\"로 변환되어야 합니다",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"[\"hi\"]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[\"hi\"]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"[8,\"hi\"]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[8,\"hi\"]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"[1,0,-1,-0.3,0.3,1343.32,3345,0.00011999]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[1,0,-1,-0.3,0.3,1343.32,3345,0.00011999]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"[8,[[],3,4]]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[8,[[],3,4]]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"[[[[\"foo\"]]]]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[[[[\"foo\"]]]]\"로 변환되어야 합니다",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"{}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"{\"a\":\"apple\"}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"a\":\"apple\"}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"{\"foo\":true,\"bar\":false,\"baz\":null}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"foo\":true,\"bar\":false,\"baz\":null}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"{\"boolean, true\":true,\"boolean, false\":false,\"null\":null}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"boolean, true\":true,\"boolean, false\":false,\"null\":null}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"{\"a\":{\"b\":\"c\"}}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"a\":{\"b\":\"c\"}}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"{\"a\":[\"b\",\"c\"]}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"a\":[\"b\",\"c\"]}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"[{\"a\":\"b\"},{\"c\":\"d\"}]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[{\"a\":\"b\"},{\"c\":\"d\"}]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"{\"a\":[],\"c\":{},\"b\":true}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"a\":[],\"c\":{},\"b\":true}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "함수와 undefined는 stringify되지 않습니다.",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 함수와 undefined는 stringify되지 않습니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "객체는 문자열 \"9\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"9\"로 변환되어야 합니다",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"null\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"null\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"true\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"true\"로 변환되어야 합니다",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"false\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"false\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"\"Hello world\"\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"\"Hello world\"\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"[]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"[8]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[8]\"로 변환되어야 합니다",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"[\"hi\"]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[\"hi\"]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"[8,\"hi\"]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[8,\"hi\"]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"[1,0,-1,-0.3,0.3,1343.32,3345,0.00011999]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[1,0,-1,-0.3,0.3,1343.32,3345,0.00011999]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"[8,[[],3,4]]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[8,[[],3,4]]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"[[[[\"foo\"]]]]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[[[[\"foo\"]]]]\"로 변환되어야 합니다",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"{}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"{\"a\":\"apple\"}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"a\":\"apple\"}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"{\"foo\":true,\"bar\":false,\"baz\":null}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"foo\":true,\"bar\":false,\"baz\":null}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"{\"boolean, true\":true,\"boolean, false\":false,\"null\":null}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"boolean, true\":true,\"boolean, false\":false,\"null\":null}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"{\"a\":{\"b\":\"c\"}}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"a\":{\"b\":\"c\"}}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"{\"a\":[\"b\",\"c\"]}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"a\":[\"b\",\"c\"]}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"[{\"a\":\"b\"},{\"c\":\"d\"}]\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[{\"a\":\"b\"},{\"c\":\"d\"}]\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체는 문자열 \"{\"a\":[],\"c\":{},\"b\":true}\"로 변환되어야 합니다",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"{\"a\":[],\"c\":{},\"b\":true}\"로 변환되어야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "함수와 undefined는 stringify되지 않습니다.",
+      "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 함수와 undefined는 stringify되지 않습니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
