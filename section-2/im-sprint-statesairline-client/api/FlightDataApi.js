@@ -1,48 +1,42 @@
-import flightList from '../resource/flightList'
-import fetch from 'node-fetch'
+import flightList from "../resource/flightList";
+import fetch from "node-fetch";
 
 if (typeof window !== "undefined") {
-  localStorage.setItem('flight', JSON.stringify(flightList));
+  localStorage.setItem("flight", JSON.stringify(flightList)); 
+  // 로컬스토리지로 setItem으로
 }
 
-/*
 export function getFlight(filterBy = {}) {
-  let json = []
-  if (typeof window !== "undefined") {
-    json = localStorage.getItem("flight");
-  }
-  const flight = JSON.parse(json) || [];
+  // HINT: 가장 마지막 테스트를 통과하기 위해, fetch를 이용합니다. 아래 구현은 완전히 삭제되어도 상관없습니다.
+  // TODO: 아래 구현을 REST API 호출로 대체하세요.
+  // const getParameter = (condition) => {
+  //   // 함수를 만든다 -> side effect 방지
+  //   let queryString = '?'
+  //   const { departure, destination } = condition;
+  //     if(departure && destination) {
+  //       return queryString + `departure=${departure}&destination=${destination}`;
+  //     }
+  //     if(departure) {
+  //       return queryString + `departure=${departure}`;
+  //     }
+  //     if(destination) {
+  //       return queryString + `destination=${destination}`;
+  //     }
+      
+  //     const apiAddress = 'http://ec2-13-124-90-231.ap-northeast-2.compute.amazonaws.com:81/flight'
 
-  return new Promise((resolve) => {
-    const filtered = flight.filter((flight) => {
-      let condition = true;
-      if (filterBy.departure) {
-        condition = condition && flight.departure === filterBy.departure
-      }
-      if (filterBy.destination) {
-        condition = condition && flight.destination === filterBy.destination
-      }
-      return condition;
-    })
+  //     return fetch(apiAddress + getParameter(filterBy)).then(res => res.json());
+  // }
 
-    setTimeout(() => {
-      resolve(filtered)
-    }, 500);
-  });
-}
-*/
 
-export function getFlight(filterBy = {}) {
-  let queryString = ''
+  let url = `http://ec2-13-124-90-231.ap-northeast-2.compute.amazonaws.com:81/flight?`;
+
   if (filterBy.departure) {
-    queryString = queryString + `departure=${filterBy.departure}&`
+    url = url + `departure=${filterBy.departure}&`;
   }
   if (filterBy.destination) {
-    queryString = queryString + `destination=${filterBy.destination}`
+    url = url + `destination=${filterBy.destination}`;
   }
 
-  let endpoint = `http://ec2-13-124-90-231.ap-northeast-2.compute.amazonaws.com:81/flight?${queryString}`
-
-  return fetch(endpoint)
-    .then(resp => resp.json())
+  return fetch(url).then((res) => res.json());
 }

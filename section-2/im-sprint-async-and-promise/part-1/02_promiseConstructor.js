@@ -1,5 +1,13 @@
+// const sleep = (wait) => {
+//   return new Promise((resolve) => {
+//     setTimeout(resolve, wait);
+//   });
+// }
+
 const sleep = (wait) => {
   return new Promise((resolve) => {
-    setTimeout(resolve, wait);
+    setTimeout(() => {
+      resolve("hello");
+    }, wait);
   });
-}
+};

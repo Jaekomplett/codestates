@@ -1,23 +1,22 @@
 const Bee = require('./Bee');
 
 class HoneyMakerBee extends Bee {
-  constructor(age, job, color, food, honeyPot) {
-    super(color, food)
+  constructor(){
+    super();
     this.age = 10;
     this.job = 'make honey';
+    // this.color : Bee 상속
+    // this.food : ./Bee/Grub 상속
     this.honeyPot = 0;
-
   }
-  
-  eat(){}
+  // eat() : Grub 상속
   makeHoney(){
-    this.honeyPot++
+    return this.honeyPot++;
+  }
 
-  }
   giveHoney(){
-    this.honeyPot--
+    return this.honeyPot--;
   }
-  
 }
 
 module.exports = HoneyMakerBee;

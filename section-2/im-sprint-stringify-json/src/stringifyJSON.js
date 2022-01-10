@@ -26,46 +26,53 @@
  * 하지만 이 과제의 목적은 재귀를 공부하는 것이니, 처음부터 구현해봐야겠지요?:
  */
 function stringifyJSON(obj) {
-  // 1. number / 3.boolean
-  if (typeof obj === "number" || typeof obj === "boolean") {
-    return String(obj);
-  }
+  // your code goes here
 
-  // 2. null
-  // null의 type은 "object"인 것을 인지.
-  if (obj === null) {
-    return "null";
-  }
+  // 숫자
+  if (typeof obj === "number") return String(obj);
 
-  // 4. string
-  if (typeof obj === "string") {
-    return `"${obj}"`;
-  }
-
-  // 5. array
+  // null
+  if (obj === null) return "null"; 
+  // https://curryyou.tistory.com/183
+  // null의 type을 확인하면 "object"로 인식한다. 
+  // js 초기 오류를 안 고친다는 의견.
+  if (typeof obj === "boolean") return String(obj); 
+  if (typeof obj === "string") return `"${obj}"`;
   if (Array.isArray(obj)) {
-    const result = [];
-    obj.forEach((element) => {
-      result.push(stringifyJSON(element));
+    let result = [];
+    obj.map((el)=> {
+      result.push(stringifyJSON(el));
     });
     return `[${result}]`;
   }
 
-  // 6. object
   if (typeof obj === "object") {
     let result = "";
     for (let key in obj) {
-      // {return ;} = {return undefined;} 같은 의미이다.
-      if (obj[key] === undefined || typeof obj[key] === "function") {
+      if (obj[key] === undefined || typeof obj[key] === "function"){
         result = String(result);
       } else {
-        result += `${stringifyJSON(key)}:${stringifyJSON(obj[key])},`;
+        result = result +`${stringifyJSON(key)}:${stringifyJSON(obj[key])}` + ',';
       }
     }
-    result = result.substr(0, result.length - 1);
+    result = result.slice(0, -1); 
     return `{${result}}`;
+  
   }
-}
+  // if (typeof obj === "object") {
+  //   let result = "";
+  //   for (let key in obj) {
+  //     // {return ;} = {return undefined;} 같은 의미이다.
+  //     if (obj[key] === undefined || typeof obj[key] === "function") {
+  //       result = String(result);
+  //     } else {
+  //       result += `${stringifyJSON(key)}:${stringifyJSON(obj[key])},`;
+  //     }
+  //   }
+  //   result = result.substr(0, result.length - 1);
+  //   return `{${result}}`;
+  // }
+};
 
 // 다음 코드는 결과 제출을 위한 코드입니다. 신경 쓰지 않아도 좋습니다.
 if (typeof window === "undefined") {

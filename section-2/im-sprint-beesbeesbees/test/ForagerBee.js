@@ -43,7 +43,7 @@ describe('ForagerBee class functionality', () => {
   });
 
   it('`forage` 메소드를 통해 `treasureChest` 속성에 보물을 추가할 수 있어야 합니다', () => {
-    foragerBee.forage('pollen'); 
+    foragerBee.forage('pollen');
     foragerBee.forage('flowers');
     foragerBee.forage('gold');
     expect(foragerBee.treasureChest).to.have.length(3);

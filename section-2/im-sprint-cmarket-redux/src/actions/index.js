@@ -20,15 +20,25 @@ export const addToCart = (itemId) => {
 export const removeFromCart = (itemId) => {
   return {
     //TODO
+    // type이 항상 필수로 담긴다.
+    type: REMOVE_FROM_CART,
+    payload: {
+      itemId
+    }
   }
 }
-
 export const setQuantity = (itemId, quantity) => {
   return {
-    //TODO
+    type: SET_QUANTITY,
+    payload: {
+      itemId,
+      quantity
+    }
   }
 }
-
+// 비동기 액션 처리하기 
+// store.js의 미들웨어 thunk를 이용해서 
+// 액션을 구현한 후, dispatch를 이용해 다른 동기 액션을 호출합니다.
 export const notify = (message, dismissTime = 5000) => dispatch => {
   const uuid = Math.random()
   dispatch(enqueueNotification(message, dismissTime, uuid))

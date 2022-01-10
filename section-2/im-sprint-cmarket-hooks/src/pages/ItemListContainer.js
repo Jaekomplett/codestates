@@ -1,8 +1,11 @@
 import React from 'react';
 import Item from '../components/Item';
 
-function ItemListContainer({ items }) {
-  const handleClick = () => { }
+function ItemListContainer({ items, updateCartItems }) {
+  const handleClick = (event, itemId) => {
+    updateCartItems({itemId});
+    // 함수를 App.js에서 선언하고 실행은 여기서 실행한다.
+  }
   return (
     <div id="item-list-container">
       <div id="item-list-body">

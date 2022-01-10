@@ -5,8 +5,8 @@
     "passes": 9,
     "pending": 0,
     "failures": 0,
-    "start": "2021-09-27T04:43:21.094Z",
-    "end": "2021-09-27T04:43:21.108Z",
+    "start": "2021-10-07T06:02:25.703Z",
+    "end": "2021-10-07T06:02:25.717Z",
     "duration": 14
   },
   "tests": [
@@ -34,7 +34,7 @@
     {
       "title": "카테고리(음료, 음식, 굿즈, 카드) 엘리먼트 안에는 각각 자식 노드를 보여주고 감춰줄 checkbox가 존재해야 합니다",
       "fullTitle": "menu 데이터를 사용해 tree view를 구성합니다 카테고리(음료, 음식, 굿즈, 카드) 엘리먼트 안에는 각각 자식 노드를 보여주고 감춰줄 checkbox가 존재해야 합니다",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -48,7 +48,7 @@
     {
       "title": "자식 노드가 없는 데이터의 경우, li 엘리먼트 안에 단순히 이름(name)만 표시합니다. (checkbox 및 span, ul을 포함하면 안됩니다)",
       "fullTitle": "menu 데이터를 사용해 tree view를 구성합니다 자식 노드가 없는 데이터의 경우, li 엘리먼트 안에 단순히 이름(name)만 표시합니다. (checkbox 및 span, ul을 포함하면 안됩니다)",
-      "duration": 4,
+      "duration": 3,
       "currentRetry": 0,
       "err": {}
     },
@@ -101,7 +101,7 @@
     {
       "title": "카테고리(음료, 음식, 굿즈, 카드) 엘리먼트 안에는 각각 자식 노드를 보여주고 감춰줄 checkbox가 존재해야 합니다",
       "fullTitle": "menu 데이터를 사용해 tree view를 구성합니다 카테고리(음료, 음식, 굿즈, 카드) 엘리먼트 안에는 각각 자식 노드를 보여주고 감춰줄 checkbox가 존재해야 합니다",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -115,7 +115,7 @@
     {
       "title": "자식 노드가 없는 데이터의 경우, li 엘리먼트 안에 단순히 이름(name)만 표시합니다. (checkbox 및 span, ul을 포함하면 안됩니다)",
       "fullTitle": "menu 데이터를 사용해 tree view를 구성합니다 자식 노드가 없는 데이터의 경우, li 엘리먼트 안에 단순히 이름(name)만 표시합니다. (checkbox 및 span, ul을 포함하면 안됩니다)",
-      "duration": 4,
+      "duration": 3,
       "currentRetry": 0,
       "err": {}
     },

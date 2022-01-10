@@ -5,9 +5,9 @@
     "passes": 21,
     "pending": 0,
     "failures": 0,
-    "start": "2021-09-27T04:48:22.790Z",
-    "end": "2021-09-27T04:48:22.799Z",
-    "duration": 9
+    "start": "2021-10-07T05:25:10.288Z",
+    "end": "2021-10-07T05:25:10.298Z",
+    "duration": 10
   },
   "tests": [
     {
@@ -27,14 +27,14 @@
     {
       "title": "객체는 문자열 \"true\"로 변환되어야 합니다",
       "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"true\"로 변환되어야 합니다",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "객체는 문자열 \"false\"로 변환되어야 합니다",
       "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"false\"로 변환되어야 합니다",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -55,14 +55,14 @@
     {
       "title": "객체는 문자열 \"[8]\"로 변환되어야 합니다",
       "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[8]\"로 변환되어야 합니다",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "객체는 문자열 \"[\"hi\"]\"로 변환되어야 합니다",
       "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[\"hi\"]\"로 변환되어야 합니다",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -178,14 +178,14 @@
     {
       "title": "객체는 문자열 \"true\"로 변환되어야 합니다",
       "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"true\"로 변환되어야 합니다",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "객체는 문자열 \"false\"로 변환되어야 합니다",
       "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"false\"로 변환되어야 합니다",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -206,14 +206,14 @@
     {
       "title": "객체는 문자열 \"[8]\"로 변환되어야 합니다",
       "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[8]\"로 변환되어야 합니다",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "객체는 문자열 \"[\"hi\"]\"로 변환되어야 합니다",
       "fullTitle": "stringifyJSON는 JSON.stringify 함수를 실행했을 때와 같은 결과를 리턴해야 합니다. 객체는 문자열 \"[\"hi\"]\"로 변환되어야 합니다",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },

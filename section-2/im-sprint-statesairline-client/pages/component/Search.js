@@ -1,16 +1,7 @@
 import { useState } from 'react'
 
-function Search({ onSearch }) {
+function Search({onSearch}) { // Main.js로부터 전달받은 props (departure, destination)
   const [textDestination, setTextDestination] = useState('')
-
-  const handleSearchButton = () => {
-    const departure = 'ICN'
-    const destination = textDestination === '' ? null : textDestination
-    onSearch({
-      departure,
-      destination
-    })
-  }
 
   const handleChange = (e) => {
     setTextDestination(e.target.value.toUpperCase())
@@ -18,8 +9,19 @@ function Search({ onSearch }) {
 
   const handleKeyPress = (e) => {
     if (e.type === 'keypress' && e.code === 'Enter') {
-      handleSearchButton()
+      handleSearchClick()
     }
+  }
+
+  // method 1. 
+  const handleSearchClick = () => {
+    console.log('검색 버튼을 누르거나, 엔터를 치면 search 함수가 실행됩니다')
+    const departure = 'ICN';
+    const destination = textDestination === '' ? null : textDestination // 무엇?
+    onSearch({
+      departure, destination
+    });
+    // TODO:
   }
 
   return <fieldset>
@@ -28,7 +30,7 @@ function Search({ onSearch }) {
     <input id="input-departure" type="text" disabled value="ICN"></input>
     <span>도착지</span>
     <input id="input-destination" type="text" value={textDestination} onChange={handleChange} placeholder="CJU, BKK, PUS 중 하나를 입력하세요" onKeyPress={handleKeyPress} />
-    <button id="search-btn" onClick={handleSearchButton}>검색</button>
+    <button id="search-btn" onClick={handleSearchClick}>검색</button>
   </fieldset>
 }
 

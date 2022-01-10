@@ -15,8 +15,8 @@ const flightRouter = require('./router/flightRouter');
 const bookRouter = require('./router/bookRouter');
 const airportRouter = require('./router/airportRouter');
 
-app.use(cors());
-app.use(express.json());
+app.use(cors()); // 1. 모든 요청/응답에 CORS 헤더를 붙여야 할 때
+app.use(express.json()); // 2. POST 요청 등에 포함된 body(payload)를 구조화할 때(쉽게 얻어내고자 할 때)
 
 app.use('/flight', flightRouter);
 app.use('/book', bookRouter);
@@ -28,6 +28,7 @@ app.get('/', (req, res) => {
 
 app.use((req, res, next) => {
   res.status(404).send('Not Found!');
+  // 에러 처리는 use() 미들웨어로 사용한다.
 });
 
 app.use((err, req, res, next) => {

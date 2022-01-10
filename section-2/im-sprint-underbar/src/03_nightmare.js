@@ -23,44 +23,12 @@
 // _.memoize를 완성한 후에 피보나치 함수에 적용하여 비교해 보시기 바랍니다.
 // 단, 재귀 함수는 함수가 할당된 변수에 메모이제이션이 적용된 함수를 재할당해야 합니다.(테스트 케이스 참고)
 _.memoize = function (func) {
-  const cache = {};
-
-  return function (...args) {
-    const problemName = JSON.stringify(args);
-    if (!cache.hasOwnProperty(problemName)) {
-      cache[problemName] = func(...args);
-    }
-    return cache[problemName];
-  };
+  // TODO: 여기에 코드를 작성합니다.
 };
 
 // _.throttle은 입력으로 전달되는 시간(ms, 밀리초)동안에 callback 함수를 단 한번만 실행되는 함수를 반환합니다.
 // 리턴되는 함수는 구간의 길이가 입력의 크기인 임의의 구간에서 callback 함수를 한 번만 실행되어야 합니다.
 // 예를 들어, _.throttle(func, 100)가 리턴하는 함수는 적어도 100ms 간격을 사이에 두고 callback 함수를 실행해야 합니다.
-_.throttle = function (func, wait, ...args) {
-  let result,
-    timeout = null,
-    previous = Date.now();
-
-  function booked() {
-    previous = Date.now();
-    timeout = null;
-    result = func(args);
-  }
-
-  return function () {
-    const _now = Date.now();
-    const remaining = wait - (_now - previous);
-    if (remaining <= 0) {
-      if (timeout) {
-        clearTimeout(timeout);
-        timeout = null;
-      }
-      previous = _now;
-      result = func(args);
-    } else if (!timeout) {
-      timeout = setTimeout(booked, remaining);
-    }
-    return result;
-  };
+_.throttle = function (func, wait) {
+  // TODO: 여기에 코드를 작성합니다.
 };
